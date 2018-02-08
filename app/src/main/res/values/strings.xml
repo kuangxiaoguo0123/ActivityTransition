@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactExample</string>
+    <string name="contact_transition_name">ContactExample</string>
+</resources>
