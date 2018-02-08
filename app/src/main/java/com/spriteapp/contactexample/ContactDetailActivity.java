@@ -35,7 +35,7 @@ public class ContactDetailActivity extends AppCompatActivity {
         getWindow().setEnterTransition(enterTransition);
 
         Slide returnTransition = new Slide(Gravity.BOTTOM);
-        enterTransition.setDuration(500);
+        returnTransition.setDuration(500);
         returnTransition.excludeTarget(android.R.id.statusBarBackground, true);
         getWindow().setReturnTransition(returnTransition);
     }
