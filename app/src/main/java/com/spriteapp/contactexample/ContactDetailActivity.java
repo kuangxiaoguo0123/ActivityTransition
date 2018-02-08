@@ -31,14 +31,12 @@ public class ContactDetailActivity extends AppCompatActivity {
         Slide enterTransition = new Slide(Gravity.BOTTOM);
         enterTransition.setDuration(500);
         enterTransition.excludeTarget(android.R.id.statusBarBackground, true);
-        enterTransition.excludeTarget(R.id.image_view, true);
         //设置Activity进入动画
         getWindow().setEnterTransition(enterTransition);
 
         Slide returnTransition = new Slide(Gravity.BOTTOM);
         enterTransition.setDuration(500);
         returnTransition.excludeTarget(android.R.id.statusBarBackground, true);
-        returnTransition.excludeTarget(R.id.image_view, true);
         getWindow().setReturnTransition(returnTransition);
     }
 

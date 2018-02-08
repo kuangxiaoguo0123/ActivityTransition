@@ -39,12 +39,12 @@ public class ContactActivity extends AppCompatActivity {
     private void setupWithAnimation() {
         Slide exitTransition = new Slide(Gravity.TOP);
         exitTransition.setDuration(500);
-        exitTransition.excludeTarget(android.R.id.statusBarBackground, false);
         //设置Activity退出动画
         getWindow().setExitTransition(exitTransition);
 
         Slide reenterTransition = new Slide(Gravity.TOP);
         reenterTransition.setDuration(500);
+        //设置状态栏不执行动画 false为默认执行
         reenterTransition.excludeTarget(android.R.id.statusBarBackground, true);
         //设置Activity再次进入时动画
         getWindow().setReenterTransition(reenterTransition);
