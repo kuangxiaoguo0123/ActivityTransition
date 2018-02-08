@@ -31,12 +31,12 @@ public class ContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_contact);
-        setupWithAnimation();
+        setupWindowAnimation();
         initView();
         initTestData();
     }
 
-    private void setupWithAnimation() {
+    private void setupWindowAnimation() {
         Slide exitTransition = new Slide(Gravity.TOP);
         exitTransition.setDuration(500);
         //设置Activity退出动画
