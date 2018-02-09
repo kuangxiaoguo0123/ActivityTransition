@@ -40,13 +40,17 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        String name = mContactList.get(position).getName();
+        final ContactModel model = mContactList.get(position);
+        String name = model.getName();
         holder.contactNameTextView.setText(name);
         holder.contactNameTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) mContext).toBundle();
+                String transitionName = mContext.getResources().getString(R.string.contact_transition_name);
+                Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) mContext,
+                        holder.contactNameTextView, transitionName).toBundle();
                 Intent intent = new Intent(mContext, ContactDetailActivity.class);
+                intent.putExtra(ContactDetailActivity.TEXT_TAG, model.getName());
                 ActivityCompat.startActivity(mContext, intent, bundle);
             }
         });

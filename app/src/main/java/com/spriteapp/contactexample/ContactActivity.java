@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.transition.Explode;
+import android.transition.Fade;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -31,12 +33,20 @@ public class ContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_contact);
-        setupWindowAnimation();
+//        setSlideAnimation();
+//        setExplodeAnimation();
         initView();
         initTestData();
     }
 
-    private void setupWindowAnimation() {
+    private void setExplodeAnimation() {
+        Explode explode = new Explode();
+        explode.setDuration(500);
+        getWindow().setExitTransition(explode);
+        getWindow().setReenterTransition(explode);
+    }
+
+    private void setSlideAnimation() {
         Slide exitTransition = new Slide(Gravity.TOP);
         exitTransition.setDuration(500);
         //设置Activity退出动画

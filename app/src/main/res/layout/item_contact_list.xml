@@ -8,11 +8,12 @@
     <TextView
         android:id="@+id/contact_name_textView"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="54dp"
         android:background="@drawable/contact_item_press_ripple"
         android:gravity="center_vertical"
         android:paddingLeft="14dp"
         android:textColor="#333333"
+        android:transitionName="@string/contact_transition_name"
         android:textSize="16sp" />
 
     <View

@@ -27,12 +27,14 @@
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/headerimage"
+                android:visibility="invisible"
                 app:layout_collapseMode="parallax" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="54dp"
+                android:background="@android:color/transparent"
                 app:layout_collapseMode="pin" />
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -49,12 +51,22 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/content_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:textColor="#333333"
+                android:textSize="40sp"
+                android:transitionName="@string/contact_transition_name" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -63,7 +75,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -72,7 +84,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -81,7 +93,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -90,7 +102,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -99,7 +111,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -108,7 +120,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -117,7 +129,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -126,16 +138,7 @@
                 android:layout_marginLeft="14dp"
                 android:gravity="center_vertical"
                 android:text="哈哈哈哈"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginLeft="14dp"
-                android:gravity="center_vertical"
-                android:text="哈哈哈哈"
-                android:textColor="#333333"
+                android:textColor="#88333333"
                 android:textSize="16sp" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
