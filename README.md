@@ -155,6 +155,8 @@ Activity Transition Animation是Android5.0系统提供的一种新的Activity切
       animator.start();
   }                                                         
 ```
+# Sample source code
+[https://github.com/kuangxiaoguo0123/ActivityTransition](https://github.com/kuangxiaoguo0123/ActivityTransition)
 
-# See more?
+# More infomation
 [http://blog.csdn.net/kuangxiaoguo0123/article/details/79293011](http://blog.csdn.net/kuangxiaoguo0123/article/details/79293011)
