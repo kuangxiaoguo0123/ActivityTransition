@@ -1,7 +1,7 @@
 # ActivityTransition
 Activity transition animation
 # Introduction
-Activity Transition Animation是Android5.0系统提供的一种新的Activity切换动画，主要有：
+Activity Transition Animation主要实现的是Activity间的动画切换，即我们常说的场景动画，主要有:
 >-  slide(位移)
 >-  fade(渐变)
 >- explode(扩散)
